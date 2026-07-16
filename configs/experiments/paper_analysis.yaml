@@ -1,0 +1,17 @@
+description: Analysis targets for Task 10; not an evaluate manifest grid.
+result_roots:
+  llm_only: results/Method_LLM
+  embedding_ablation: results/Method_vectorRAG
+  vector_rag_main: results/Method_vectorRAG
+  reranker_ablation: results/Method_vectorRAG
+  endorag_main: results/Method_vectorRAG
+  oracle_routing: results/Method_vectorRAG/oracle
+  literature_corpus: results/Method_vectorRAG/literature
+manifests:
+  llm_only: configs/experiments/llm_only.yaml
+  embedding_ablation: configs/experiments/embedding_ablation.yaml
+  vector_rag_main: configs/experiments/vector_rag_main.yaml
+  reranker_ablation: configs/experiments/reranker_ablation.yaml
+  endorag_main: configs/experiments/endorag_main.yaml
+  oracle_routing: configs/experiments/oracle_routing.yaml
+  literature_corpus: configs/experiments/literature_corpus.yaml

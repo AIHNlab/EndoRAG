@@ -1,0 +1,26 @@
+llm,dataset,no_oracle_acc_pct,oracle_acc_pct,delta_oracle_minus_no_oracle_pct
+gemma4:31b-cloud,Diabetes,83.02,83.02,0.00
+gemma4:31b-cloud,Adrenal,86.00,88.00,2.00
+gemma4:31b-cloud,Thyroid,84.75,88.14,3.39
+gemma4:31b-cloud,Pituitary,81.48,81.48,0.00
+gemma4:31b-cloud,Parathyroid,90.70,93.02,2.33
+gemma4:31b-cloud,Reproductive,76.19,73.81,-2.38
+minimax-m2.7:cloud,Diabetes,79.25,81.13,1.89
+minimax-m2.7:cloud,Adrenal,82.00,82.00,0.00
+minimax-m2.7:cloud,Thyroid,86.44,84.75,-1.69
+minimax-m2.7:cloud,Pituitary,83.33,81.48,-1.85
+minimax-m2.7:cloud,Parathyroid,90.70,90.70,0.00
+minimax-m2.7:cloud,Reproductive,73.81,73.81,0.00
+mistral-small3.2:24b,Diabetes,64.15,71.70,7.55
+mistral-small3.2:24b,Adrenal,78.00,78.00,0.00
+mistral-small3.2:24b,Thyroid,83.05,84.75,1.69
+mistral-small3.2:24b,Pituitary,75.93,77.78,1.85
+mistral-small3.2:24b,Parathyroid,83.72,88.37,4.65
+mistral-small3.2:24b,Reproductive,64.29,64.29,0.00
+nemotron-3-nano:30b-cloud,Diabetes,79.25,77.36,-1.89
+nemotron-3-nano:30b-cloud,Adrenal,76.00,80.00,4.00
+nemotron-3-nano:30b-cloud,Thyroid,88.14,86.44,-1.69
+nemotron-3-nano:30b-cloud,Pituitary,72.22,79.63,7.41
+nemotron-3-nano:30b-cloud,Parathyroid,86.05,93.02,6.98
+nemotron-3-nano:30b-cloud,Reproductive,66.67,66.67,0.00
+ALL,Overall micro avg,79.98,81.40,1.41

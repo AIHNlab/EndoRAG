@@ -1,0 +1,93 @@
+schema_version: 1
+checksum_policy: >
+  sha256 may be an empty string or TODO_FILL_AFTER_UPLOAD until external
+  document archives are published. Populate real digests only when archives
+  are available locally or at artifact_uri.
+artifacts:
+  - logical_name: diabetes_literature
+    category: Diabetes and Lipid Metabolism
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/documents/domain_specific/diabetes_literature.tar.gz
+    relative_path: DiabetesLiterature
+    expected_path: ${ENDORAG_DOCUMENT_ROOT}/DiabetesLiterature
+    document_count: 111
+    sha256: TODO_FILL_AFTER_UPLOAD
+    embedding_model: null
+    chunk_size: null
+    chunk_overlap: null
+
+  - logical_name: pituitary_literature
+    category: Pituitary Gland and Hypothalamus
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/documents/domain_specific/pituitary_literature.tar.gz
+    relative_path: PituitaryLiterature
+    expected_path: ${ENDORAG_DOCUMENT_ROOT}/PituitaryLiterature
+    document_count: 116
+    sha256: TODO_FILL_AFTER_UPLOAD
+    embedding_model: null
+    chunk_size: null
+    chunk_overlap: null
+
+  - logical_name: thyroid_literature
+    category: Thyroid Gland
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/documents/domain_specific/thyroid_literature.tar.gz
+    relative_path: ThyroidLiterature
+    expected_path: ${ENDORAG_DOCUMENT_ROOT}/ThyroidLiterature
+    document_count: 60
+    sha256: TODO_FILL_AFTER_UPLOAD
+    embedding_model: null
+    chunk_size: null
+    chunk_overlap: null
+
+  - logical_name: parathyroid_literature
+    category: Parathyroid Gland and Bone Disease
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/documents/domain_specific/parathyroid_literature.tar.gz
+    relative_path: ParathyroidLiterature
+    expected_path: ${ENDORAG_DOCUMENT_ROOT}/ParathyroidLiterature
+    document_count: 79
+    sha256: TODO_FILL_AFTER_UPLOAD
+    embedding_model: null
+    chunk_size: null
+    chunk_overlap: null
+
+  - logical_name: reproductive_endocrinology_literature
+    category: Reproductive Endocrinology, Andrology and Sexual Function
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/documents/domain_specific/reproductive_endocrinology_literature.tar.gz
+    relative_path: ReproductiveEndocrinologyLiterature
+    expected_path: ${ENDORAG_DOCUMENT_ROOT}/ReproductiveEndocrinologyLiterature
+    document_count: 85
+    sha256: TODO_FILL_AFTER_UPLOAD
+    embedding_model: null
+    chunk_size: null
+    chunk_overlap: null
+
+  - logical_name: adrenal_literature
+    category: Adrenal Glands
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/documents/domain_specific/adrenal_literature.tar.gz
+    relative_path: AdrenalLiterature
+    expected_path: ${ENDORAG_DOCUMENT_ROOT}/AdrenalLiterature
+    document_count: 42
+    sha256: TODO_FILL_AFTER_UPLOAD
+    embedding_model: null
+    chunk_size: null
+    chunk_overlap: null
+
+  - logical_name: endocrinology_books
+    category: Other
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/documents/domain_specific/endocrinology_books.tar.gz
+    relative_path: EndocrinologyBooks
+    expected_path: ${ENDORAG_DOCUMENT_ROOT}/EndocrinologyBooks
+    document_count: 3
+    sha256: TODO_FILL_AFTER_UPLOAD
+    embedding_model: null
+    chunk_size: null
+    chunk_overlap: null
+
+  - logical_name: literature_documents
+    category: Literature
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/documents/literature_unified/literature_documents.tar.gz
+    relative_path: LiteratureDocuments
+    expected_path: ${ENDORAG_DOCUMENT_ROOT}/LiteratureDocuments
+    document_count: 482
+    sha256: TODO_FILL_AFTER_UPLOAD
+    embedding_model: null
+    chunk_size: null
+    chunk_overlap: null

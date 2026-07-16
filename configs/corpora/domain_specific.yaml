@@ -1,0 +1,17 @@
+# Seven-bucket domain-specific corpus routing (includes default Other collection).
+collections:
+  - category: Diabetes and Lipid Metabolism
+    source_dir: ${ENDORAG_DOCUMENT_ROOT}/DiabetesLiterature
+  - category: Pituitary Gland and Hypothalamus
+    source_dir: ${ENDORAG_DOCUMENT_ROOT}/PituitaryLiterature
+  - category: Thyroid Gland
+    source_dir: ${ENDORAG_DOCUMENT_ROOT}/ThyroidLiterature
+  - category: Parathyroid Gland and Bone Disease
+    source_dir: ${ENDORAG_DOCUMENT_ROOT}/ParathyroidLiterature
+  - category: Reproductive Endocrinology, Andrology and Sexual Function
+    source_dir: ${ENDORAG_DOCUMENT_ROOT}/ReproductiveEndocrinologyLiterature
+  - category: Adrenal Glands
+    source_dir: ${ENDORAG_DOCUMENT_ROOT}/AdrenalLiterature
+  - category: Other
+    source_dir: ${ENDORAG_DOCUMENT_ROOT}/EndocrinologyBooks
+    default: true

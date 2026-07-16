@@ -1,0 +1,80 @@
+# Visual OCR-Enhanced Docling Configuration
+# This file contains settings for the visual OCR-based document processing pipeline
+# Uses spatial layout analysis and visual positioning for intelligent content detection
+
+# Model Configuration
+models:
+  llm:
+    model: "qwen3:30b"
+    base_url: "http://localhost:11434"
+    temperature: 0.1
+
+  vlm:
+    model: "llama3.2-vision:90b"
+    base_url: "http://localhost:11434"
+    prompt: >
+      Describe this image in detail. Focus on:
+      - Any visible text, labels, or captions
+      - Charts, graphs, or data visualizations
+      Be precise and comprehensive, maximum 2-4 sentences.
+
+# Document Processing Configuration
+processing:
+  file_extensions:
+    - ".pdf"
+    - ".docx"
+    - ".doc"
+
+  docling:
+    enable_vlm_descriptions: true
+    enable_ocr: true
+    force_full_page_ocr: true
+    enable_table_structure: true
+    images_scale: 2.0
+    export_format: "markdown"
+    clean_content: true
+    enable_section_removal: false
+
+    layout_analysis:
+      header_y_threshold: 0.1
+      footer_y_threshold: 0.9
+      reference_y_threshold: 0.7
+      footnote_y_threshold: 0.8
+      author_y_threshold: 0.3
+
+    font_analysis:
+      footnote_size_ratio: 0.8
+      reference_size_ratio: 0.9
+      header_size_ratio: 1.2
+
+    use_spatial_positioning: true
+    use_font_analysis: true
+    use_column_detection: true
+    preserve_tables: true
+
+# Vector Database Configuration (paper chunking: 512/100)
+vector_db:
+  index_mode: "vector"
+  similarity_top_k: 5
+  chunk_size: 512
+  chunk_overlap: 100
+
+query:
+  test_queries:
+    - "What are the main symptoms of mitochondrial diabetes?"
+    - "Describe any figures or images related to diabetes treatment."
+    - "What diagnostic methods are mentioned for diabetes?"
+    - "Summarize the key findings from any charts or graphs."
+    - "What are the recommended treatment protocols?"
+    - "Describe any patient case studies mentioned."
+
+logging:
+  level: "INFO"
+  save_processing_report: true
+  save_raw_documents: true
+
+advanced:
+  token_limits: [800, 600, 400, 300]
+  graph:
+    max_cluster_size: 20
+    rebuild_communities: false

@@ -1,0 +1,105 @@
+schema_version: 1
+checksum_policy: >
+  sha256 may be an empty string or TODO_FILL_AFTER_UPLOAD until external
+  vector-database archives are published. collection_count is the number of
+  Chroma collections represented by each archive (1 per domain bucket).
+paper_defaults:
+  embedding_model: qwen3-embedding:8b
+  chunk_size: 512
+  chunk_overlap: 100
+artifacts:
+  - logical_name: domain_diabetes_vectors
+    category: Diabetes and Lipid Metabolism
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/vector_databases/domain_specific/qwen3-embedding_8b/C512_O100/diabetes_and_lipid_metabolism.tar.gz
+    relative_path: qwen3-embedding:8b/chunk_512/diabetes_and_lipid_metabolism
+    expected_path: ${ENDORAG_CHROMA_ROOT}/qwen3-embedding:8b/chunk_512/diabetes_and_lipid_metabolism
+    collection_count: 1
+    document_count: 111
+    embedding_model: qwen3-embedding:8b
+    chunk_size: 512
+    chunk_overlap: 100
+    sha256: TODO_FILL_AFTER_UPLOAD
+
+  - logical_name: domain_pituitary_vectors
+    category: Pituitary Gland and Hypothalamus
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/vector_databases/domain_specific/qwen3-embedding_8b/C512_O100/pituitary_gland_and_hypothalamus.tar.gz
+    relative_path: qwen3-embedding:8b/chunk_512/pituitary_gland_and_hypothalamus
+    expected_path: ${ENDORAG_CHROMA_ROOT}/qwen3-embedding:8b/chunk_512/pituitary_gland_and_hypothalamus
+    collection_count: 1
+    document_count: 116
+    embedding_model: qwen3-embedding:8b
+    chunk_size: 512
+    chunk_overlap: 100
+    sha256: TODO_FILL_AFTER_UPLOAD
+
+  - logical_name: domain_thyroid_vectors
+    category: Thyroid Gland
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/vector_databases/domain_specific/qwen3-embedding_8b/C512_O100/thyroid_gland.tar.gz
+    relative_path: qwen3-embedding:8b/chunk_512/thyroid_gland
+    expected_path: ${ENDORAG_CHROMA_ROOT}/qwen3-embedding:8b/chunk_512/thyroid_gland
+    collection_count: 1
+    document_count: 60
+    embedding_model: qwen3-embedding:8b
+    chunk_size: 512
+    chunk_overlap: 100
+    sha256: TODO_FILL_AFTER_UPLOAD
+
+  - logical_name: domain_parathyroid_vectors
+    category: Parathyroid Gland and Bone Disease
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/vector_databases/domain_specific/qwen3-embedding_8b/C512_O100/parathyroid_gland_and_bone_disease.tar.gz
+    relative_path: qwen3-embedding:8b/chunk_512/parathyroid_gland_and_bone_disease
+    expected_path: ${ENDORAG_CHROMA_ROOT}/qwen3-embedding:8b/chunk_512/parathyroid_gland_and_bone_disease
+    collection_count: 1
+    document_count: 79
+    embedding_model: qwen3-embedding:8b
+    chunk_size: 512
+    chunk_overlap: 100
+    sha256: TODO_FILL_AFTER_UPLOAD
+
+  - logical_name: domain_reproductive_vectors
+    category: Reproductive Endocrinology, Andrology and Sexual Function
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/vector_databases/domain_specific/qwen3-embedding_8b/C512_O100/reproductive_endocrinology_andrology_and_sexual_function.tar.gz
+    relative_path: qwen3-embedding:8b/chunk_512/reproductive_endocrinology_andrology_and_sexual_function
+    expected_path: ${ENDORAG_CHROMA_ROOT}/qwen3-embedding:8b/chunk_512/reproductive_endocrinology_andrology_and_sexual_function
+    collection_count: 1
+    document_count: 85
+    embedding_model: qwen3-embedding:8b
+    chunk_size: 512
+    chunk_overlap: 100
+    sha256: TODO_FILL_AFTER_UPLOAD
+
+  - logical_name: domain_adrenal_vectors
+    category: Adrenal Glands
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/vector_databases/domain_specific/qwen3-embedding_8b/C512_O100/adrenal_glands.tar.gz
+    relative_path: qwen3-embedding:8b/chunk_512/adrenal_glands
+    expected_path: ${ENDORAG_CHROMA_ROOT}/qwen3-embedding:8b/chunk_512/adrenal_glands
+    collection_count: 1
+    document_count: 42
+    embedding_model: qwen3-embedding:8b
+    chunk_size: 512
+    chunk_overlap: 100
+    sha256: TODO_FILL_AFTER_UPLOAD
+
+  - logical_name: domain_other_vectors
+    category: Other
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/vector_databases/domain_specific/qwen3-embedding_8b/C512_O100/other.tar.gz
+    relative_path: qwen3-embedding:8b/chunk_512/other
+    expected_path: ${ENDORAG_CHROMA_ROOT}/qwen3-embedding:8b/chunk_512/other
+    collection_count: 1
+    document_count: 3
+    embedding_model: qwen3-embedding:8b
+    chunk_size: 512
+    chunk_overlap: 100
+    sha256: TODO_FILL_AFTER_UPLOAD
+
+  - logical_name: literature_unified_vectors
+    category: Literature
+    artifact_uri: ${ENDORAG_ARTIFACT_BASE_URL}/vector_databases/literature_unified/qwen3-embedding_8b/C512_O100/literature.tar.gz
+    relative_path: qwen3-embedding:8b/chunk_512/literature
+    expected_path: ${ENDORAG_CHROMA_ROOT}/qwen3-embedding:8b/chunk_512/literature
+    collection_count: 1
+    document_count: 482
+    embedding_model: qwen3-embedding:8b
+    chunk_size: 512
+    chunk_overlap: 100
+    sha256: TODO_FILL_AFTER_UPLOAD

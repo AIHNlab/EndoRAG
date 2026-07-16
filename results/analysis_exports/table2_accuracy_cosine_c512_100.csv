@@ -1,0 +1,17 @@
+llm,framework,diabetes,thyroid,parathyroid,pituitary,adrenal,reproductive,ukeu,macro_avg_pct,micro_avg_pct,domain_routing_macro_avg_pct,domain_routing_micro_avg_pct,routing_diabetes_pct,routing_thyroid_pct,routing_parathyroid_pct,routing_pituitary_pct,routing_adrenal_pct,routing_reproductive_pct,routing_ukeu_pct,median_time_s
+gemma4:31b-cloud,LLM,64.15,79.66,93.02,72.22,72.00,80.95,62.35,74.91,73.32,,,,,,,,,,0.5
+gemma4:31b-cloud,Single-pass RAG w/o rerank,77.36,84.75,90.70,68.52,82.00,73.81,68.24,77.91,76.94,,,,,,,,,,1.5
+gemma4:31b-cloud,Single-pass RAG w/ rerank,83.02,84.75,90.70,81.48,86.00,76.19,72.94,82.15,81.35,,,,,,,,,,7.8
+gemma4:31b-cloud,Agentic Workflow,84.91,93.22,95.35,92.59,88.00,85.71,81.18,88.71,88.08,89.93,90.37,88.68,98.31,86.05,85.19,98.00,83.33,94.12,40.0
+nemotron-3-nano:30b,LLM,64.15,69.49,79.07,57.41,62.00,64.29,48.24,63.52,61.92,,,,,,,,,,2.4
+nemotron-3-nano:30b,Single-pass RAG w/o rerank,75.47,83.05,88.37,68.52,78.00,66.67,57.65,73.96,72.54,,,,,,,,,,6.8
+nemotron-3-nano:30b,Single-pass RAG w/ rerank,79.25,88.14,86.05,72.22,76.00,66.67,62.35,75.81,74.87,,,,,,,,,,9.8
+nemotron-3-nano:30b,Agentic Workflow,84.91,86.44,88.37,74.07,78.00,69.05,58.82,77.09,75.65,83.88,84.72,83.02,94.92,83.72,83.33,94.00,64.29,83.53,54.5
+mistral-small3.2:24b,LLM,43.40,64.41,74.42,51.85,52.00,61.90,38.82,55.26,53.37,,,,,,,,,,0.3
+mistral-small3.2:24b,Single-pass RAG w/o rerank,66.04,81.36,90.70,68.52,78.00,61.90,49.41,70.85,68.91,,,,,,,,,,2.4
+mistral-small3.2:24b,Single-pass RAG w/ rerank,64.15,83.05,83.72,75.93,78.00,64.29,51.76,71.56,69.95,,,,,,,,,,5.2
+mistral-small3.2:24b,Agentic Workflow,73.58,88.14,90.70,62.96,80.00,69.05,57.65,74.58,73.06,86.65,86.71,81.13,96.61,79.07,72.22,98.00,92.86,83.53,96.2
+minimax-m2.7:cloud,LLM,73.58,76.27,86.05,79.63,78.00,76.19,63.53,76.18,74.87,,,,,,,,,,18.0
+minimax-m2.7:cloud,Single-pass RAG w/o rerank,75.47,83.05,90.70,79.63,82.00,71.43,65.88,78.31,77.20,,,,,,,,,,27.5
+minimax-m2.7:cloud,Single-pass RAG w/ rerank,79.25,86.44,90.70,83.33,82.00,73.81,70.59,80.87,80.05,,,,,,,,,,30.8
+minimax-m2.7:cloud,Agentic Workflow,79.25,91.53,90.70,85.19,80.00,76.19,75.29,82.59,82.12,85.66,86.38,86.79,93.22,76.74,87.04,94.00,76.19,89.41,166.4

@@ -1,0 +1,5 @@
+model: Qwen/Qwen3-Reranker-8B
+instruction: >-
+  Given a multiple-choice question in clinical endocrinology, judge whether
+  the retrieved context provides information needed to determine the correct
+  answer

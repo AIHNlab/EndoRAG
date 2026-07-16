@@ -1,0 +1,225 @@
+experiments:
+- name: llm_gemma4__31b-cloud_MCQs_book
+  method: llm
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_LLM/gemma4:31b-cloud/MCQs_book_LLM_gemma4__31b-cloud_1.json
+  log: logs/MCQs_book_LLM_gemma4__31b-cloud_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+  seed: 42
+- name: llm_gemma4__31b-cloud_UKEU
+  method: llm
+  dataset: data/datasets/UKEU.json
+  output: results/Method_LLM/gemma4:31b-cloud/UKEU_LLM_gemma4__31b-cloud_1.json
+  log: logs/UKEU_LLM_gemma4__31b-cloud_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+  seed: 42
+- name: llm_gemma4__31b-cloud_AdrenalGlands
+  method: llm
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_LLM/gemma4:31b-cloud/AdrenalGlands_LLM_gemma4__31b-cloud_1.json
+  log: logs/AdrenalGlands_LLM_gemma4__31b-cloud_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+  seed: 42
+- name: llm_gemma4__31b-cloud_ThyroidGland
+  method: llm
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_LLM/gemma4:31b-cloud/ThyroidGland_LLM_gemma4__31b-cloud_1.json
+  log: logs/ThyroidGland_LLM_gemma4__31b-cloud_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+  seed: 42
+- name: llm_gemma4__31b-cloud_PituitaryGlandAndHypothalamus
+  method: llm
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_LLM/gemma4:31b-cloud/PituitaryGlandAndHypothalamus_LLM_gemma4__31b-cloud_1.json
+  log: logs/PituitaryGlandAndHypothalamus_LLM_gemma4__31b-cloud_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+  seed: 42
+- name: llm_gemma4__31b-cloud_ParathyroidGlandAndBoneDisease
+  method: llm
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_LLM/gemma4:31b-cloud/ParathyroidGlandAndBoneDisease_LLM_gemma4__31b-cloud_1.json
+  log: logs/ParathyroidGlandAndBoneDisease_LLM_gemma4__31b-cloud_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+  seed: 42
+- name: llm_gemma4__31b-cloud_ReproductiveEndocrinology
+  method: llm
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_LLM/gemma4:31b-cloud/ReproductiveEndocrinology_LLM_gemma4__31b-cloud_1.json
+  log: logs/ReproductiveEndocrinology_LLM_gemma4__31b-cloud_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+  seed: 42
+- name: llm_nemotron-3-nano__30b-cloud_MCQs_book
+  method: llm
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_LLM/nemotron-3-nano:30b-cloud/MCQs_book_LLM_nemotron-3-nano__30b-cloud_1.json
+  log: logs/MCQs_book_LLM_nemotron-3-nano__30b-cloud_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+  seed: 42
+- name: llm_nemotron-3-nano__30b-cloud_UKEU
+  method: llm
+  dataset: data/datasets/UKEU.json
+  output: results/Method_LLM/nemotron-3-nano:30b-cloud/UKEU_LLM_nemotron-3-nano__30b-cloud_1.json
+  log: logs/UKEU_LLM_nemotron-3-nano__30b-cloud_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+  seed: 42
+- name: llm_nemotron-3-nano__30b-cloud_AdrenalGlands
+  method: llm
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_LLM/nemotron-3-nano:30b-cloud/AdrenalGlands_LLM_nemotron-3-nano__30b-cloud_1.json
+  log: logs/AdrenalGlands_LLM_nemotron-3-nano__30b-cloud_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+  seed: 42
+- name: llm_nemotron-3-nano__30b-cloud_ThyroidGland
+  method: llm
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_LLM/nemotron-3-nano:30b-cloud/ThyroidGland_LLM_nemotron-3-nano__30b-cloud_1.json
+  log: logs/ThyroidGland_LLM_nemotron-3-nano__30b-cloud_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+  seed: 42
+- name: llm_nemotron-3-nano__30b-cloud_PituitaryGlandAndHypothalamus
+  method: llm
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_LLM/nemotron-3-nano:30b-cloud/PituitaryGlandAndHypothalamus_LLM_nemotron-3-nano__30b-cloud_1.json
+  log: logs/PituitaryGlandAndHypothalamus_LLM_nemotron-3-nano__30b-cloud_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+  seed: 42
+- name: llm_nemotron-3-nano__30b-cloud_ParathyroidGlandAndBoneDisease
+  method: llm
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_LLM/nemotron-3-nano:30b-cloud/ParathyroidGlandAndBoneDisease_LLM_nemotron-3-nano__30b-cloud_1.json
+  log: logs/ParathyroidGlandAndBoneDisease_LLM_nemotron-3-nano__30b-cloud_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+  seed: 42
+- name: llm_nemotron-3-nano__30b-cloud_ReproductiveEndocrinology
+  method: llm
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_LLM/nemotron-3-nano:30b-cloud/ReproductiveEndocrinology_LLM_nemotron-3-nano__30b-cloud_1.json
+  log: logs/ReproductiveEndocrinology_LLM_nemotron-3-nano__30b-cloud_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+  seed: 42
+- name: llm_mistral-small3.2__24b_MCQs_book
+  method: llm
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_LLM/mistral-small3.2:24b/MCQs_book_LLM_mistral-small3.2__24b_1.json
+  log: logs/MCQs_book_LLM_mistral-small3.2__24b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+  seed: 42
+- name: llm_mistral-small3.2__24b_UKEU
+  method: llm
+  dataset: data/datasets/UKEU.json
+  output: results/Method_LLM/mistral-small3.2:24b/UKEU_LLM_mistral-small3.2__24b_1.json
+  log: logs/UKEU_LLM_mistral-small3.2__24b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+  seed: 42
+- name: llm_mistral-small3.2__24b_AdrenalGlands
+  method: llm
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_LLM/mistral-small3.2:24b/AdrenalGlands_LLM_mistral-small3.2__24b_1.json
+  log: logs/AdrenalGlands_LLM_mistral-small3.2__24b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+  seed: 42
+- name: llm_mistral-small3.2__24b_ThyroidGland
+  method: llm
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_LLM/mistral-small3.2:24b/ThyroidGland_LLM_mistral-small3.2__24b_1.json
+  log: logs/ThyroidGland_LLM_mistral-small3.2__24b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+  seed: 42
+- name: llm_mistral-small3.2__24b_PituitaryGlandAndHypothalamus
+  method: llm
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_LLM/mistral-small3.2:24b/PituitaryGlandAndHypothalamus_LLM_mistral-small3.2__24b_1.json
+  log: logs/PituitaryGlandAndHypothalamus_LLM_mistral-small3.2__24b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+  seed: 42
+- name: llm_mistral-small3.2__24b_ParathyroidGlandAndBoneDisease
+  method: llm
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_LLM/mistral-small3.2:24b/ParathyroidGlandAndBoneDisease_LLM_mistral-small3.2__24b_1.json
+  log: logs/ParathyroidGlandAndBoneDisease_LLM_mistral-small3.2__24b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+  seed: 42
+- name: llm_mistral-small3.2__24b_ReproductiveEndocrinology
+  method: llm
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_LLM/mistral-small3.2:24b/ReproductiveEndocrinology_LLM_mistral-small3.2__24b_1.json
+  log: logs/ReproductiveEndocrinology_LLM_mistral-small3.2__24b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+  seed: 42
+- name: llm_minimax-m2.7__cloud_MCQs_book
+  method: llm
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_LLM/minimax-m2.7:cloud/MCQs_book_LLM_minimax-m2.7__cloud_1.json
+  log: logs/MCQs_book_LLM_minimax-m2.7__cloud_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+  seed: 42
+- name: llm_minimax-m2.7__cloud_UKEU
+  method: llm
+  dataset: data/datasets/UKEU.json
+  output: results/Method_LLM/minimax-m2.7:cloud/UKEU_LLM_minimax-m2.7__cloud_1.json
+  log: logs/UKEU_LLM_minimax-m2.7__cloud_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+  seed: 42
+- name: llm_minimax-m2.7__cloud_AdrenalGlands
+  method: llm
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_LLM/minimax-m2.7:cloud/AdrenalGlands_LLM_minimax-m2.7__cloud_1.json
+  log: logs/AdrenalGlands_LLM_minimax-m2.7__cloud_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+  seed: 42
+- name: llm_minimax-m2.7__cloud_ThyroidGland
+  method: llm
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_LLM/minimax-m2.7:cloud/ThyroidGland_LLM_minimax-m2.7__cloud_1.json
+  log: logs/ThyroidGland_LLM_minimax-m2.7__cloud_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+  seed: 42
+- name: llm_minimax-m2.7__cloud_PituitaryGlandAndHypothalamus
+  method: llm
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_LLM/minimax-m2.7:cloud/PituitaryGlandAndHypothalamus_LLM_minimax-m2.7__cloud_1.json
+  log: logs/PituitaryGlandAndHypothalamus_LLM_minimax-m2.7__cloud_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+  seed: 42
+- name: llm_minimax-m2.7__cloud_ParathyroidGlandAndBoneDisease
+  method: llm
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_LLM/minimax-m2.7:cloud/ParathyroidGlandAndBoneDisease_LLM_minimax-m2.7__cloud_1.json
+  log: logs/ParathyroidGlandAndBoneDisease_LLM_minimax-m2.7__cloud_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+  seed: 42
+- name: llm_minimax-m2.7__cloud_ReproductiveEndocrinology
+  method: llm
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_LLM/minimax-m2.7:cloud/ReproductiveEndocrinology_LLM_minimax-m2.7__cloud_1.json
+  log: logs/ReproductiveEndocrinology_LLM_minimax-m2.7__cloud_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+  seed: 42

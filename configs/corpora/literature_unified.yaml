@@ -1,0 +1,5 @@
+# Unified literature corpus used for literature-vs-domain ablations.
+collections:
+  - category: Literature
+    source_dir: ${ENDORAG_DOCUMENT_ROOT}/LiteratureDocuments
+    default: true

@@ -1,0 +1,12 @@
+name: endorag
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.10
+  - pip
+  - git-lfs
+  - pip:
+      - -r requirements.txt
+      - -e .

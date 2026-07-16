@@ -1,0 +1,2241 @@
+experiments:
+- name: embed_embeddinggemma_gemma4__31b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/embeddinggemma/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_gemma4__31b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/embeddinggemma/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_gemma4__31b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/embeddinggemma/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_gemma4__31b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/embeddinggemma/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_gemma4__31b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/embeddinggemma/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_gemma4__31b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/embeddinggemma/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_gemma4__31b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/embeddinggemma/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_gemma4__31b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/bge-m3:latest/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_gemma4__31b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/bge-m3:latest/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_gemma4__31b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/bge-m3:latest/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_gemma4__31b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/bge-m3:latest/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_gemma4__31b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/bge-m3:latest/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_gemma4__31b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/bge-m3:latest/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_gemma4__31b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/bge-m3:latest/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_gemma4__31b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/nomic-embed-text:latest/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_gemma4__31b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/nomic-embed-text:latest/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_gemma4__31b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/nomic-embed-text:latest/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_gemma4__31b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/nomic-embed-text:latest/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_gemma4__31b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/nomic-embed-text:latest/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_gemma4__31b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/nomic-embed-text:latest/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_gemma4__31b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/nomic-embed-text:latest/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_gemma4__31b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/text-embedding-3-large/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_gemma4__31b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/text-embedding-3-large/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_gemma4__31b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/text-embedding-3-large/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_gemma4__31b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/text-embedding-3-large/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_gemma4__31b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/text-embedding-3-large/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_gemma4__31b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/text-embedding-3-large/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_gemma4__31b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/text-embedding-3-large/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_gemma4__31b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/qwen3-embedding:8b/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_gemma4__31b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/qwen3-embedding:8b/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_gemma4__31b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/qwen3-embedding:8b/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_gemma4__31b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/qwen3-embedding:8b/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_gemma4__31b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/qwen3-embedding:8b/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_gemma4__31b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/qwen3-embedding:8b/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_gemma4__31b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/gemma4:31b-cloud/qwen3-embedding:8b/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_gemma4__31b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: gemma4:31b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_nemotron-3-nano__30b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/embeddinggemma/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_nemotron-3-nano__30b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/embeddinggemma/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_nemotron-3-nano__30b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/embeddinggemma/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_nemotron-3-nano__30b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/embeddinggemma/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_nemotron-3-nano__30b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/embeddinggemma/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_nemotron-3-nano__30b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/embeddinggemma/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_nemotron-3-nano__30b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/embeddinggemma/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_embeddinggemma_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_nemotron-3-nano__30b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/bge-m3:latest/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_nemotron-3-nano__30b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/bge-m3:latest/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_nemotron-3-nano__30b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/bge-m3:latest/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_nemotron-3-nano__30b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/bge-m3:latest/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_nemotron-3-nano__30b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/bge-m3:latest/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_nemotron-3-nano__30b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/bge-m3:latest/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_nemotron-3-nano__30b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/bge-m3:latest/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_nemotron-3-nano__30b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/nomic-embed-text:latest/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_nemotron-3-nano__30b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/nomic-embed-text:latest/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_nemotron-3-nano__30b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/nomic-embed-text:latest/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_nemotron-3-nano__30b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/nomic-embed-text:latest/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_nemotron-3-nano__30b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/nomic-embed-text:latest/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_nemotron-3-nano__30b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/nomic-embed-text:latest/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_nemotron-3-nano__30b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/nomic-embed-text:latest/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_nemotron-3-nano__30b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/text-embedding-3-large/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_nemotron-3-nano__30b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/text-embedding-3-large/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_nemotron-3-nano__30b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/text-embedding-3-large/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_nemotron-3-nano__30b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/text-embedding-3-large/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_nemotron-3-nano__30b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/text-embedding-3-large/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_nemotron-3-nano__30b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/text-embedding-3-large/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_nemotron-3-nano__30b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/text-embedding-3-large/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_nemotron-3-nano__30b-cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/qwen3-embedding:8b/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_nemotron-3-nano__30b-cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/qwen3-embedding:8b/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_nemotron-3-nano__30b-cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/qwen3-embedding:8b/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_nemotron-3-nano__30b-cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/qwen3-embedding:8b/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_nemotron-3-nano__30b-cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/qwen3-embedding:8b/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_nemotron-3-nano__30b-cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/qwen3-embedding:8b/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_nemotron-3-nano__30b-cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/nemotron-3-nano:30b-cloud/qwen3-embedding:8b/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_nemotron-3-nano__30b-cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: nemotron-3-nano:30b-cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_mistral-small3.2__24b_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/embeddinggemma/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_mistral-small3.2__24b_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/embeddinggemma/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_mistral-small3.2__24b_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/embeddinggemma/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_mistral-small3.2__24b_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/embeddinggemma/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_mistral-small3.2__24b_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/embeddinggemma/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_mistral-small3.2__24b_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/embeddinggemma/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_mistral-small3.2__24b_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/embeddinggemma/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_embeddinggemma_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_mistral-small3.2__24b_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/bge-m3:latest/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_mistral-small3.2__24b_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/bge-m3:latest/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_mistral-small3.2__24b_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/bge-m3:latest/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_mistral-small3.2__24b_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/bge-m3:latest/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_mistral-small3.2__24b_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/bge-m3:latest/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_mistral-small3.2__24b_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/bge-m3:latest/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_mistral-small3.2__24b_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/bge-m3:latest/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_bge-m3__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_mistral-small3.2__24b_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/nomic-embed-text:latest/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_mistral-small3.2__24b_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/nomic-embed-text:latest/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_mistral-small3.2__24b_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/nomic-embed-text:latest/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_mistral-small3.2__24b_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/nomic-embed-text:latest/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_mistral-small3.2__24b_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/nomic-embed-text:latest/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_mistral-small3.2__24b_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/nomic-embed-text:latest/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_mistral-small3.2__24b_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/nomic-embed-text:latest/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_mistral-small3.2__24b_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/text-embedding-3-large/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_mistral-small3.2__24b_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/text-embedding-3-large/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_mistral-small3.2__24b_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/text-embedding-3-large/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_mistral-small3.2__24b_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/text-embedding-3-large/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_mistral-small3.2__24b_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/text-embedding-3-large/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_mistral-small3.2__24b_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/text-embedding-3-large/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_mistral-small3.2__24b_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/text-embedding-3-large/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_text-embedding-3-large_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_mistral-small3.2__24b_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/qwen3-embedding:8b/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_mistral-small3.2__24b_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/qwen3-embedding:8b/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_mistral-small3.2__24b_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/qwen3-embedding:8b/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_mistral-small3.2__24b_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/qwen3-embedding:8b/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_mistral-small3.2__24b_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/qwen3-embedding:8b/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_mistral-small3.2__24b_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/qwen3-embedding:8b/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_mistral-small3.2__24b_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/mistral-small3.2:24b/qwen3-embedding:8b/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_mistral-small3.2__24b_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: mistral-small3.2:24b
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_minimax-m2.7__cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/embeddinggemma/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_minimax-m2.7__cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/embeddinggemma/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_minimax-m2.7__cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/embeddinggemma/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_minimax-m2.7__cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/embeddinggemma/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_minimax-m2.7__cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/embeddinggemma/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_minimax-m2.7__cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/embeddinggemma/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_embeddinggemma_minimax-m2.7__cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/embeddinggemma/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_embeddinggemma_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: embeddinggemma
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_minimax-m2.7__cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/bge-m3:latest/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_minimax-m2.7__cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/bge-m3:latest/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_minimax-m2.7__cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/bge-m3:latest/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_minimax-m2.7__cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/bge-m3:latest/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_minimax-m2.7__cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/bge-m3:latest/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_minimax-m2.7__cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/bge-m3:latest/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_bge-m3__latest_minimax-m2.7__cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/bge-m3:latest/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_bge-m3__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: bge-m3:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_minimax-m2.7__cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/nomic-embed-text:latest/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_minimax-m2.7__cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/nomic-embed-text:latest/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_minimax-m2.7__cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/nomic-embed-text:latest/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_minimax-m2.7__cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/nomic-embed-text:latest/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_minimax-m2.7__cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/nomic-embed-text:latest/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_minimax-m2.7__cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/nomic-embed-text:latest/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_nomic-embed-text__latest_minimax-m2.7__cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/nomic-embed-text:latest/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_nomic-embed-text__latest_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: nomic-embed-text:latest
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_minimax-m2.7__cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/text-embedding-3-large/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_minimax-m2.7__cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/text-embedding-3-large/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_minimax-m2.7__cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/text-embedding-3-large/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_minimax-m2.7__cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/text-embedding-3-large/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_minimax-m2.7__cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/text-embedding-3-large/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_minimax-m2.7__cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/text-embedding-3-large/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_text-embedding-3-large_minimax-m2.7__cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/text-embedding-3-large/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_text-embedding-3-large_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: text-embedding-3-large
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_minimax-m2.7__cloud_MCQs_book
+  method: vector-rag
+  dataset: data/datasets/MCQs_sample_questions2015_full.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/qwen3-embedding:8b/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/MCQs_sample_questions2015_full_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_minimax-m2.7__cloud_UKEU
+  method: vector-rag
+  dataset: data/datasets/UKEU.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/qwen3-embedding:8b/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/UKEU_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_minimax-m2.7__cloud_AdrenalGlands
+  method: vector-rag
+  dataset: data/datasets/AdrenalGlands_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/qwen3-embedding:8b/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/AdrenalGlands_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_minimax-m2.7__cloud_ThyroidGland
+  method: vector-rag
+  dataset: data/datasets/ThyroidGland_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/qwen3-embedding:8b/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ThyroidGland_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_minimax-m2.7__cloud_PituitaryGlandAndHypothalamus
+  method: vector-rag
+  dataset: data/datasets/PituitaryGlandAndHypothalamus_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/qwen3-embedding:8b/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/PituitaryGlandAndHypothalamus_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_minimax-m2.7__cloud_ParathyroidGlandAndBoneDisease
+  method: vector-rag
+  dataset: data/datasets/ParathyroidGlandAndBoneDisease_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/qwen3-embedding:8b/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ParathyroidGlandAndBoneDisease_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42
+- name: embed_qwen3-embedding__8b_minimax-m2.7__cloud_ReproductiveEndocrinology
+  method: vector-rag
+  dataset: data/datasets/ReproductiveEndocrinology_dataset.json
+  output: results/Method_vectorRAG/minimax-m2.7:cloud/qwen3-embedding:8b/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.json
+  log: logs/Cosine_C512_100/ReproductiveEndocrinology_dataset_diabetesVectorTool512_100_minimax-m2.7__cloud_qwen3-embedding__8b_1.log
+  provider:
+    llm_name: minimax-m2.7:cloud
+    embed_model_name: qwen3-embedding:8b
+  retrieval:
+    top_k: 5
+    chunk_size: 512
+    chunk_overlap: 100
+    candidate_multiplier: 4.0
+    use_rerank: false
+  corpus_manifest: configs/corpora/domain_specific.yaml
+  seed: 42

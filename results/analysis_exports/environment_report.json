@@ -1,0 +1,26 @@
+{
+  "configured_environment_variables": [],
+  "created_at": "2026-07-14T12:22:52.472631+00:00",
+  "cuda": {
+    "available": true,
+    "devices": [
+      "NVIDIA RTX A6000",
+      "NVIDIA RTX A6000"
+    ],
+    "runtime": "12.1"
+  },
+  "ollama": "ollama version is 0.22.1",
+  "packages": {
+    "chromadb": "1.5.9",
+    "docling": "2.50.0",
+    "docling-core": "2.87.0",
+    "langgraph": "1.2.2",
+    "llama-index": "0.14.21",
+    "pydantic": "2.13.4",
+    "pydantic-ai-slim": "1.104.0",
+    "torch": "2.5.1+cu121",
+    "transformers": "4.57.6"
+  },
+  "platform": "Linux-6.8.0-59-generic-x86_64-with-glibc2.35",
+  "python": "3.10.20 | packaged by conda-forge | (main, Jun 11 2026, 03:31:56) [GCC 14.3.0]"
+}

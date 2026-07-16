@@ -1,0 +1,11 @@
+model,source,diabetes,thyroid,parathyroid,pituitary,adrenal,reproductive,ukeu,macro_avg_pct,micro_avg_pct
+gemma4:31b,Literature,81.13,84.75,88.37,81.48,84.00,73.81,70.59,80.59,79.79
+gemma4:31b,Domain-specific,83.02,84.75,90.70,81.48,86.00,76.19,72.94,82.15,81.35
+nemotron-3-nano:30b,Literature,75.47,86.44,83.72,74.07,76.00,64.29,63.53,74.79,74.09
+nemotron-3-nano:30b,Domain-specific,79.25,88.14,86.05,72.22,76.00,66.67,62.35,75.81,74.87
+mistral-small3.2:24b,Literature,66.04,84.75,88.37,68.52,80.00,64.29,60.00,73.14,72.02
+mistral-small3.2:24b,Domain-specific,64.15,83.05,83.72,75.93,78.00,64.29,51.76,71.56,69.95
+minimax-m2.7:cloud,Literature,81.13,84.75,90.70,81.48,80.00,71.43,70.59,80.01,79.27
+minimax-m2.7:cloud,Domain-specific,79.25,86.44,90.70,83.33,82.00,73.81,70.59,80.87,80.05
+All models,Literature (avg),75.94,85.17,87.79,76.39,80.00,68.46,66.18,77.13,76.29
+All models,Domain-specific (avg),76.42,85.59,87.79,78.24,80.50,70.24,64.41,77.60,76.56
