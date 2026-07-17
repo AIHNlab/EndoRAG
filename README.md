@@ -23,10 +23,18 @@ src/endorag/
 └── cli.py          # endorag command-line interface
 ```
 
-External source documents and prebuilt Chroma indexes are **not** committed to Git. They are declared in `data/manifests/` and fetched or verified through `${ENDORAG_ARTIFACT_BASE_URL}`.
-This are the links for accessing them:
-1. Sounce documents -> X
-2. Chroma indexes -> X 
+External corpora and indexes are **not** committed to Git. Manifests under `data/manifests/` declare expected paths and digests; after download, extract archives so paths match `ENDORAG_DOCUMENT_ROOT` and `ENDORAG_CHROMA_ROOT` (see [docs/reproducibility.md](docs/reproducibility.md)).
+
+| Artifact | Contents | Download |
+| --- | --- | --- |
+| Source documents | Original PDFs used for indexing | [Dropbox folder](https://www.dropbox.com/scl/fo/h01b0dedvotpo34kurhv9/ACb7H8fzzml7zRR_2Fb_IDQ?rlkey=bejdplemldzpw64ooox5htfm2&st=c5kqmtup&dl=0) |
+| Chroma indexes | Prebuilt vector databases for retrieval | [Dropbox folder](https://www.dropbox.com/scl/fo/5u3mzuown53qmdeilvytx/AKBhifk3p55QmMTL0dmPXqI?rlkey=plre7qsqtkl9vu86zjk8obn0f&st=1bqqb3lz&dl=0) |
+| Preprocessed Markdown | Docling outputs after document parsing | [markdown_documents.zip](https://www.dropbox.com/scl/fi/9c6o9wwuegd24r5nh2697/markdown_documents.zip?rlkey=4lgdyi32xfh4n0ixyt75y1fw3&st=bgmjpoc3&dl=0) |
+
+## Prerequisites
+
+- **[Ollama](https://ollama.com/)** — LLMs and embeddings used by EndoRAG are hosted through Ollama (local server and/or [Ollama Cloud](https://ollama.com)). Install Ollama and pull the models named in your experiment manifests before running evaluations. Paper reproduction uses local Ollama and/or cloud models (`*:cloud`) with `ENDORAG_OLLAMA_API_KEY`.
+- **OpenAI (optional)** — You can also run OpenAI chat models whose names start with `gpt-` and the `text-embedding-3-large` embedding by setting `OPENAI_API_KEY`. The published paper configurations use Ollama, not OpenAI.
 
 ## Quick start
 
@@ -56,7 +64,7 @@ cp .env.example .env
 | `ENDORAG_OLLAMA_BASE_URL`       | Local Ollama endpoint (default `http://localhost:11434`)               |
 | `ENDORAG_OLLAMA_CLOUD_BASE_URL` | Ollama cloud API base                                                  |
 | `ENDORAG_OLLAMA_API_KEY`        | API key for cloud-hosted Ollama models                                 |
-| `OPENAI_API_KEY`                | Required only for OpenAI embedding models                              |
+| `OPENAI_API_KEY`                | Optional: OpenAI `gpt-*` LLMs and `text-embedding-3-large` embeddings  |
 | `RERANK_DEVICE`                 | Cross-encoder device (default `cuda`; paper runs used an NVIDIA A6000) |
 
 
