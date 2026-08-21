@@ -168,11 +168,12 @@ endorag evaluate --manifest <experiment-manifest> [--resume] [--overwrite] [--dr
 endorag analyze --manifest configs/experiments/paper_analysis.yaml
 endorag environment report --output <path.json>
 ```
+## License
+Copyright © 2026 University of Bern, ARTORG Center for Biomedical Engineering Research, Authors: Maria Panagiotou, Lubnaa Abdur Rahman, Ioannis Papathanail, Stavroula Mougiakakou
 
-## License and citation
+The code is licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at [![Apache 2.0 License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 
-Licensed under the [Apache License 2.0](LICENSE). See [NOTICE](NOTICE) for copyright attribution.
-
+## Citation
 If you use EndoRAG, please cite the associated paper:
 
 ```bibtex
